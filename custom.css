@@ -82,7 +82,114 @@ float:center;
 font-weight:bold;
 }
 #questionone{
-background-color:#ff00ff;
+background-color:#ffffff;
 width:60%;
 height:50%;
+border:1px;
+border-radius:10px;
 }
+
+#option1 {
+color:#6f5499;
+font-size:25px;
+text-align:center;
+padding:5px;
+font-weight:bold;
+}
+#option2 {
+color:#6f5499;
+font-size:25px;
+text-align:center;
+padding:5px;
+font-weight:bold;
+}
+
+#option3 {
+color:#6f5499;
+font-size:25px;
+text-align:center;
+padding:5px;
+font-weight:bold;}
+
+#option4{
+color:#6f5499;
+font-size:25px;
+text-align:center;
+padding:5px;
+font-weight:bold;}
+
+#nextbuttontext{
+color:#6f5499;
+font-size:15px;
+text-align:center;
+padding:2px;
+font-weight:bold;
+}
+
+ #nextbutton{
+width:20%;
+height:20%;
+float:right;
+margin:right;
+padding:15px 5px 0px 0px;
+}
+
+ #previousbutton{
+width:20%;
+height:20%;
+float:left;
+margin:left;
+padding:15px 10px 0px 200px;
+}
+
+
+body form p{
+color:#fe00ee;
+font-size:30px;
+margin:auto;
+text-align:left;
+padding:10px 10px 12px 5px;
+font-weight:bold;}
+
+body form {
+padding:10px 0px 10px 30px;
+}
+
+div #nextbutton a button{
+  border-radius:10px;
+  border: 3px double #FC6;
+  border-top-color: #FC9;
+  border-left-color: #FC9;
+}
+div #nextbutton a button:hover,div #nextbutton a button:focus {
+cursor: hand;
+ border-color: #F00 #C30 #C30 #F00;
+ cursor: pointer;
+ -webkit-animation: pulsate 1.2s linear infinite;
+    animation: pulsate 1.2s linear infinite;
+ 
+}
+
+div #previousbutton a button{
+  border-radius:10px;
+  border: 3px double #FC6;
+  border-top-color: #FC9;
+  border-left-color: #FC9;
+}
+div #previousbutton a button:hover,div #nextbutton a button:focus {
+cursor: hand;
+ border-color: #F00 #C30 #C30 #F00;
+ cursor: pointer;
+ -webkit-animation: pulsate 1.2s linear infinite;
+    animation: pulsate 1.2s linear infinite;
+ 
+}
+
+
+.radiobutton:hover{
+ cursor: hand;
+ border-color: #F00 #C30 #C30 #F00;
+ cursor: pointer;
+ background-color: #6f5499;
+ background-position: 0 -24px;
+  }
