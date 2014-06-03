@@ -1,6 +1,88 @@
 
-
-
 body{
-background-color:#6f5499
-};
+background-color:#6f5499;
+}
+div .quote  h3{
+color:#ffffff;
+font-size:30px;
+margin:auto;
+text-align:center;
+width:60%;
+padding:20px;
+}
+div .quote  h4{
+color:#ffffff;
+font-size:30px;
+margin:auto;
+text-align:center;
+width:50%;
+padding:20px;
+}
+
+div .quote  h4 span{
+color:#ffff33;
+}
+
+div .theme_container  h1{
+font-size:80px;
+color:#ffffff;
+text-align:center;
+padding:5px;
+margin:auto;
+width:10%;
+border:2px solid #ffffff ;
+border-radius:20px;
+}
+
+div .container_1{
+display:inline;
+}
+
+
+div .container_1  img{
+width:80px;
+height:80px;
+display:inline;
+padding:10px 0px 0px 10px;
+}
+
+div .container_1 h2{
+color:#ffffff;
+font-size:30px;
+margin:auto;
+text-align:left;
+display:inline;
+}
+
+div .button  {
+color:#0000ff;
+margin:auto;
+text-align:center;
+padding:10px;
+width:30%;
+float:center
+}
+div.button a button:hover{
+text-decoration:underline;
+}
+
+
+div .button a button  {
+background-color:#ffffff;
+color:#6f5499;
+border:3px;
+border-radius:10px;
+border-color:#ffffff;
+font-size:30px;
+margin:auto;
+text-align:center;
+padding:10px;
+width:50%;
+float:center;
+font-weight:bold;
+}
+#questionone{
+background-color:#ff00ff;
+width:60%;
+height:50%;
+}
