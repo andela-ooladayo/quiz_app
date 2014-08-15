@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TempApp</title>
+<link href="custom_2.css" rel="stylesheet" type="text/css"><link>
+<link href="custom.css" rel="stylesheet" type="text/css"><link>
+<script type="text/javascript" src="custom.js" ></script>
+<script type="text/javascript" src="jquery.js" ></script>
+</head>
+<body id="questionone">
+<script>
+$(document).ready(
+function(){
+
+$('#form2').hide();
+$('#form3').hide();
+$('#form4').hide();
+$('#form5').hide();
+$('#form6').hide();
+$('#form7').hide();
+$('#form8').hide();
+$('#form9').hide();
+$('#form10').hide();
+$('#result1').hide();
+$('#result2').hide();
+$('#result3').hide();
+$('#result4').hide();
+
+$('.Next1').click( function(){
+$('#form1').hide()
+$('#form2').show()
+});
+
+$('.Next2').click( function(){
+$('#form2').hide()
+$('#form3').show()
+});
+
+$('.Next3').click( function(){
+$('#form3').hide()
+$('#form4').show()
+});
+
+
+$('.Next4').click( function(){
+$('#form4').hide()
+$('#form5').show()
+});
+
+
+$('.Next5').click( function(){
+$('#form5').hide()
+$('#form6').show()
+});
+
+
+
+$('.Next6').click( function(){
+$('#form6').hide()
+$('#form7').show()
+});
+
+
+$('.Next7').click( function(){
+$('#form7').hide()
+$('#form8').show()
+});
+
+
+$('.Next8').click( function(){
+$('#form8').hide()
+$('#form9').show()
+});
+
+$('.Next9').click( function(){
+$('#form9').hide()
+$('#form10').show()
+});
+
+$('.previous1').click( function(){
+$('#form2').hide()
+$('#form1').show()
+});
+
+$('.previous2').click( function(){
+$('#form3').hide()
+$('#form2').show()
+});
+
+$('.previous3').click( function(){
+$('#form4').hide()
+$('#form3').show()
+});
+
+$('.previous4').click( function(){
+$('#form5').hide()
+$('#form4').show()
+});
+
+$('.previous5').click( function(){
+$('#form6').hide()
+$('#form5').show()
+});
+
+$('.previous6').click( function(){
+$('#form7').hide()
+$('#form6').show()
+});
+
+$('.previous7').click( function(){
+$('#form8').hide()
+$('#form7').show()
+});
+
+$('.previous8').click( function(){
+$('#form9').hide()
+$('#form8').show()
+});
+
+$('.previous9').click( function(){
+$('#form10').hide()
+$('#form9').show()
+});
+
+$('.submit').click(function(){
+var cvalue1 = $('input[name=choice1]:checked').val();
+var cvalue2 = $('input[name=choice2]:checked').val();
+var cvalue3 = $('input[name=choice3]:checked').val();
+var cvalue4 = $('input[name=choice4]:checked').val();
+var cvalue5 = $('input[name=choice5]:checked').val();
+var cvalue6 = $('input[name=choice6]:checked').val();
+var cvalue7 = $('input[name=choice7]:checked').val();
+var cvalue8 = $('input[name=choice8]:checked').val();
+var cvalue9 = $('input[name=choice9]:checked').val();
+var cvalue10 = $('input[name=choice10]:checked').val();
+var cvalue = parseInt(cvalue1)+parseInt(cvalue2)+parseInt(cvalue3)+parseInt(cvalue4)+parseInt(cvalue5)+parseInt(cvalue6)+parseInt(cvalue7)+parseInt(cvalue8)+parseInt(cvalue9)+parseInt(cvalue10);
+
+if(cvalue>=30){$('#form10').hide(); $('#result3').show();}
+else if(cvalue<=12){$('#form10').hide(); $('#result1').show();}
+else if(cvalue=0){$('#form10').hide(); $('#result2').show();}
+else {$('#form10').hide();$('#result4').show();}
+});
+
+
+});
+</script> 
+
+<div id="form1">
+<form>
+<p>1. First off, the glass is half</p>
+<input class="radiobutton" type="radio" name="choice1" value="4" /><span id="option1">Full.</span><br><br>
+<input class="radiobutton" type="radio" name="choice1" value="1" /><span id="option2">Huh! I wanted coke!</span><br><br>
+<input class="radiobutton" type="radio" name="choice1" value="2" /><span   id="option3" >Empty.</span><br><br>
+<input class="radiobutton" type="radio" name="choice1" value="3" /><span id="option4" >Maybe I should ask my friend</span><br>
+<div>
+<div id="nextbutton">
+<button type="button" class="Next1"><span id="nextbuttontext">Next<span></button>
+</div>
+</div>
+</form>
+</div>
+
+<div id="form2">
+<form>
+<p>2. You wanted to write a book. can you finish it?</p>
+<input class="radiobutton" type="radio" name="choice2" value="1" /><span id="option1">Yes! I must finish it! Hear me I MUST!</span><br><br>
+<input class="radiobutton" type="radio" name="choice2" value="3" /><span id="option2">Of course!</span><br><br>
+<input class="radiobutton" type="radio" name="choice2" value="2" /><span   id="option3" >No, probably not...</span><br><br>
+<input class="radiobutton" type="radio" name="choice2" value="4" /><span id="option4" >I'm likely to end up not finishing it.</span><br>
+<div>
+<div id="previousbutton">
+<button type="button" class="previous1"><span id="nextbuttontext">Previous</button></span>
+</div>
+</div>
+<div>
+<div id="nextbutton">
+<button type="button" class="Next2" ><span id="nextbuttontext">Next</button></span>
+</div>
+</div>
+</form>
+</div>
+
+
+
+<div id="form3" >
+<form >
+<p>3. In a group, you're most likely to be</p>
+<input class="radiobutton" type="radio" name="choice3" value="4" /><span id="option1">That one big chatterbox,The influential guy.</span><br><br>
+<input class="radiobutton" type="radio" name="choice3" value="2" /><span id="option2">The idea person.</span><br><br>
+<input class="radiobutton" type="radio" name="choice3" value="1" /><span   id="option3" >The leader.</span><br><br>
+<input class="radiobutton" type="radio" name="choice3" value="3" /><span id="option4" >A mediator.</span><br>
+<div>
+<div id="previousbutton">
+<button type="button" class="previous2" ><span id="nextbuttontext">Previous</button></span>
+</div>
+</div>
+<div>
+<div id="nextbutton">
+<button type="button" class="Next3" ><span id="nextbuttontext">Next</button></span>
+</div>
+</div>
+</form>
+</div>
+
+<div id="form4" >
+<form  >
+<p>4. What is the usual emotion you feel</p>
+<input class="radiobutton" type="radio" name="choice4" value="1" /><span id="option1">Anger</span><br><br>
+<input class="radiobutton" type="radio" name="choice4" value="4" /><span id="option2">Happiness.</span><br><br>
+<input class="radiobutton" type="radio" name="choice4" value="2" /><span   id="option3" >Depends on the situation.</span><br><br>
+<input class="radiobutton" type="radio" name="choice4" value="3" /><span id="option4" >Sadness.</span><br>
+
+
+<div>
+<div id="previousbutton">
+<button type="button" class="previous3"><span id="nextbuttontext">Previous</button></span>
+</div>
+</div>
+
+<div>
+<div id="nextbutton">
+<button type="button" class="Next4"><span id="nextbuttontext">Next</button></span>
+</div>
+</div>
+</form>
+</div>
+
+<div id="form5" >
+<form>
+<p>5. Are you</p>
+<input class="radiobutton" type="radio" name="choice5" value="3" /><span id="option1">Introverted.</span><br><br>
+<input class="radiobutton" type="radio" name="choice5" value="1" /><span id="option2">Extroverted, with a degree of ambiversion.</span><br><br>
+<input class="radiobutton" type="radio" name="choice5" value="2" /><span   id="option3" >Introverted, with a degree of ambiversion.</span><br><br>
+<input class="radiobutton" type="radio" name="choice5" value="4" /><span id="option4" >Extroverted.</span><br>
+
+
+<div>
+<div id="previousbutton">
+<button type="button" class="previous4"><span id="nextbuttontext">Previous</button></span>
+</div>
+</div>
+
+<div>
+<div id="nextbutton">
+<button type="button" class="Next5"><span id="nextbuttontext">Next</button></span>
+</div>
+</div>
+
+</form>
+</div>
+
+<div id="form6">
+<form  >
+<p>6. Do you trust people at first instance?</p>
+<input class="radiobutton" type="radio" name="choice6" value="3" /><span id="option1">A little bit.</span><br><br>
+<input class="radiobutton" type="radio" name="choice6" value="4" /><span id="option2">Yes! I'm making a new friend!</span><br><br>
+<input class="radiobutton" type="radio" name="choice6" value="2" /><span   id="option3" >I don't know.</span><br><br>
+<input class="radiobutton" type="radio" name="choice6" value="1" /><span id="option4" >No. Why would I</span><br>
+
+
+<div>
+<div id="previousbutton">
+<button type="button" class="previous5"><span id="nextbuttontext">Previous</button></span>
+</div>
+</div>
+
+<div>
+<div id="nextbutton">
+<button type="button" class="Next6"><span id="nextbuttontext">Next</button></span>
+</div>
+</div>
+
+</form>
+</div>
+
+
+
+<div id="form7">
+<form  >
+<p>7. Are you a (an)</p>
+<input class="radiobutton" type="radio" name="choice7" value="4" /><span id="option1">Optimist oh yeah!</span><br><br>
+<input class="radiobutton" type="radio" name="choice7" value="3" /><span id="option2">It really depends on everyone else Yes.</span><br><br>
+<input class="radiobutton" type="radio" name="choice7" value="1" /><span   id="option3" >Realist Yeah I sure am.</span><br><br>
+<input class="radiobutton" type="radio" name="choice7" value="2" /><span id="option4" >Pessimist Uh-huh.</span><br>
+
+
+<div>
+<div id="previousbutton">
+<button type="button" class="previous6"><span id="nextbuttontext">Previous</button></span>
+</div>
+</div>
+
+<div>
+<div id="nextbutton">
+<button type="button"><span id="nextbuttontext" class="Next7">Next</button></span>
+</div>
+</div>
+
+</form>
+</div>
+
+
+<div id="form8">
+<form>
+<p>8. What element defines you best(you can guess)</p>
+<input class="radiobutton" type="radio" name="choice8" value="3" /><span id="option1">Water.</span><br><br>
+<input class="radiobutton" type="radio" name="choice8" value="1" /><span id="option2">Fire.</span><br><br>
+<input class="radiobutton" type="radio" name="choice8" value="4" /><span   id="option3" >Air.</span><br><br>
+<input class="radiobutton" type="radio" name="choice8" value="2" /><span id="option4" >Earth.</span><br>
+<div>
+<div id="previousbutton">
+<button type="button" class="previous7"><span id="nextbuttontext">Previous</button></span>
+</div>
+</div>
+<div>
+<div id="nextbutton">
+<button type="button" class="Next8"><span id="nextbuttontext">Next</button></span>
+</div>
+</div>
+</form>
+</div>
+
+
+
+<div id="form9">
+<form >
+<p>9. Do you have any idea about your temperament<p>
+<input class="radiobutton" type="radio" name="choice9" value="3" /><span id="option1">Not really.</span><br>
+<input class="radiobutton" type="radio" name="choice9" value="1" /><span id="option2">Yes.</span><br>
+<input class="radiobutton" type="radio" name="choice9" value="4" /><span   id="option3" >Yup.</span><br>
+<input class="radiobutton" type="radio" name="choice9" value="2" /><span id="option4" >Sort of.</span><br>
+<div>
+<div id="previousbutton">
+<button type="button" class="previous8"><span id="nextbuttontext">Previous</button></span>
+</div>
+</div>
+
+<div>
+<div id="nextbutton">
+<button type="button" class="Next9"><span id="nextbuttontext">Next</button></span>
+</div>
+</div>
+
+</form>
+</div>
+
+<div id="form10" >
+<form >
+<p>10. All right, are you ready?</p>
+<input class="radiobutton" type="radio" name="choice10" value="1" /><span id="option1">Yeah, it's long, but be quiet and show me.</span><br><br>
+<input class="radiobutton" type="radio" name="choice10" value="2" /><span id="option2">OK! dances in chair.</span><br></br>
+<input class="radiobutton" type="radio" name="choice10" value="4" /><span   id="option3" >Sure. Let's see the results.</span><br><br>
+<input class="radiobutton" type="radio" name="choice10" value="3" /><span id="option4" >I'm ready.</span><br>
+<div>
+<div id="previousbutton">
+<button type="button" class="previous9"><span id="nextbuttontext">Previous</button></span>
+</div>
+</div>
+
+<div>
+<div id="nextbutton">
+<button type="button" class="submit"><span id="nextbuttontext">SUBMIT</button></span>
+</div>
+</div>
+</form>
+</div>
+
+<div id="result1">
+<div>
+<p>
+<p>Congratulation!<p>
+You're predominately the <span>phlegmatic temperament!</span><br><br> Calm, cool, and collected, and possibly meek,peaceful,shy and mild-mannered
+</p>
+</div>
+</div>
+
+<div id="result2">
+<div>
+<p>
+<p>Oh no! you didn't pick any option<p>
+<br><br> Refresh the page...
+</p>
+</div>
+</div>
+
+<div id="result3">
+<div>
+<p>
+<p>Congratulation!<p>
+You're predominately the <span>Sanguine temperament!</span><br><br> outgoing and friendly, popular raise others spirit, talkative and cheeful 
+</p>
+</div>
+</div>
+
+<div id="result4">
+<div>
+<p>
+<p>Congratulation!<p>
+You're predominately the <span>Choleric temperament!</span><br><br> A leader, very reliable. impatient, quick-tempered, bossy, proud, and unsympathetic
+</p>
+</div>
+</div>
+
+</body>
+</html>
